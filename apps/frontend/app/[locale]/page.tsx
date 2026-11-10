@@ -1,9 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 
+import Wrapper from '#/components/Wrapper';
+
 export default async function Home() {
   const t = await getTranslations();
 
   return (
-    <p className='leading-130'>{t('button.search')}</p>
+    <Wrapper>{t('button.search')}</Wrapper>
   );
 }
