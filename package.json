@@ -1,0 +1,17 @@
+{
+  "name": "dominance",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "bun@1.2.22",
+  "engines": {
+    "node": "22.18.0",
+    "bun": "1.2.22"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "front:dev": "bun run --filter @dominance/frontend dev",
+    "front:lint": "bun run --filter @dominance/frontend lint"
+  }
+}

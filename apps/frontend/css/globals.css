@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "@heroui/styles"; 
+
+@import './palettes/light.css' layer(theme);
+@import './palettes/variants.css';
+
+@import './utilities/typography.css';
+
+@theme {
+  --color-primary: var(--color-primary-500);
+  --color-primary-500: var(--color-primary-500);
+
+  --leading-120: 120%;
+  --leading-130: 130%;
+  --leading-140: 140%;
+}
