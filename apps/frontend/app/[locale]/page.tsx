@@ -1,11 +1,15 @@
 import { getTranslations } from 'next-intl/server';
 
-import Wrapper from '#/components/Wrapper';
+import Panel from '#/components/Panel';
 
 export default async function Home() {
   const t = await getTranslations();
 
   return (
-    <Wrapper>{t('button.search')}</Wrapper>
+    <main>
+      <Panel as='header' border='bottom'>
+        {t('button.search')}
+      </Panel>
+    </main>
   );
 }

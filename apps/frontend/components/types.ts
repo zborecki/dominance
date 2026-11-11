@@ -1,9 +1,14 @@
 import { ReactNode } from 'react';
 
-export type IBaseProps<TClassNames extends string = never, TProps extends object = object> = TProps & (
-  [TClassNames] extends [never] ? { className?: never } : { className?: TClassNames }
+export type BaseProps<TClassNames extends string = never, TProps extends object = SharedProps> = TProps & ([TClassNames] extends [never]
+  ? { classNames?: never }
+  : { classNames?: Record<TClassNames, string> }
 );
 
-export type ChildrenProps<T extends 'optional' | 'required' = 'optional'> = T extends 'required'
+export type ChildrenProps<T extends 'optional' | 'required' = 'required'> = T extends 'required'
   ? { children: ReactNode | ReactNode[] }
   : { children?: ReactNode | ReactNode[] };
+
+export interface SharedProps {
+  className?: string;
+}
