@@ -1,3 +1,4 @@
-@utility typo-h1 {
-  @apply text-primary-500;
+@utility typo-logotype {
+  @apply font-unbounded font-medium text-lg;
+;
 }

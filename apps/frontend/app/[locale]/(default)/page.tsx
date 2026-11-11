@@ -7,9 +7,7 @@ export default async function Home() {
 
   return (
     <main>
-      <Panel as='header' border='bottom'>
-        {t('button.search')}
-      </Panel>
+      {t('button.search')}
     </main>
   );
 }

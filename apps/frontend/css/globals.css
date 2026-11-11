@@ -12,6 +12,8 @@
 
   --color-slate-300: oklch(0.904 0.0127 271.28);
 
+  --font-unbounded: var(--font-unbounded);
+
   --leading-120: 120%;
   --leading-130: 130%;
   --leading-140: 140%;
