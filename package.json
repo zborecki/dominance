@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "packageManager": "bun@1.2.22",
   "engines": {
-    "node": "22.18.0",
+    "node": "24.16.0",
     "bun": "1.2.22"
   },
   "workspaces": [
