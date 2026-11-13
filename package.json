@@ -11,6 +11,8 @@
     "apps/*"
   ],
   "scripts": {
+    "back:lint": "bun run --filter @dominance/backend lint",
+    "back:dev": "bun run --filter @dominance/backend start:dev",
     "front:dev": "bun run --filter @dominance/frontend dev",
     "front:lint": "bun run --filter @dominance/frontend lint"
   }

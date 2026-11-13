@@ -1,0 +1,109 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [],
+  "categories": {
+    "correctness": "off"
+  },
+  "env": {
+    "builtin": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.{js,jsx,mjs,cjs,ts,tsx,mts}"
+      ],
+      "rules": {
+        "@stylistic/semi": [
+          "error",
+          "always"
+        ],
+        "@stylistic/indent": [
+          "error",
+          2
+        ],
+        "@stylistic/no-multiple-empty-lines": [
+          "error",
+          {
+            "max": 1,
+            "maxBOF": 0
+          }
+        ],
+        "@stylistic/eol-last": [
+          "error",
+          "always"
+        ],
+        "@stylistic/padding-line-between-statements": [
+          "error",
+          {
+            "blankLine": "always",
+            "prev": "import",
+            "next": "*"
+          },
+          {
+            "blankLine": "any",
+            "prev": "import",
+            "next": "import"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "return"
+          },
+          {
+            "blankLine": "always",
+            "prev": [
+              "const",
+              "let",
+              "var"
+            ],
+            "next": [
+              "if",
+              "switch",
+              "for",
+              "while",
+              "function",
+              "return",
+              "block-like"
+            ]
+          },
+          {
+            "blankLine": "any",
+            "prev": [
+              "const",
+              "let",
+              "var"
+            ],
+            "next": [
+              "const",
+              "let",
+              "var"
+            ]
+          }
+        ],
+        "arrow-body-style": [
+          "error",
+          "as-needed"
+        ],
+        "max-lines": [
+          "error",
+          120
+        ],
+        "no-console": [
+          "warn",
+          {
+            "allow": [
+              "error"
+            ]
+          }
+        ],
+        "object-shorthand": [
+          "error",
+          "always"
+        ]
+      },
+      "jsPlugins": [
+        "@stylistic/eslint-plugin"
+      ]
+    }
+  ]
+}
