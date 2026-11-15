@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@heroui/react": "^3.2.7",
+    "@heroui/styles": "^3.2.7",
+    "next": "16.4.6",
+    "next-intl": "^4.14.10",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5"
+  },
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "name": "@dominance/frontend",
+  "packageManager": "bun@1.2.22",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "eslint",
+    "start": "next start"
+  },
+  "trustedDependencies": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "version": "0.0.0"
+}
