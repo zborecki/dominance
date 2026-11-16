@@ -1,3 +1,6 @@
 [data-theme="light"] {
+  --color-ink-300: oklch(42.091% 0.03728 274.721);
+  --color-ink-800: oklch(19.281% 0.03051 277.333);
+
   --color-primary-500: oklch(48.814% 0.25134 272.132);
 }

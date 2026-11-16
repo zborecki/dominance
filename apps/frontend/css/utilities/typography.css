@@ -1,4 +1,12 @@
+@utility type-body-medium {
+  @apply font-instrument-sans text-base;
+}
+
+@utility type-label-medium {
+  @apply font-instrument-sans text-sm;
+}
+
 @utility typo-logotype {
   @apply font-unbounded font-medium text-lg;
-;
 }
+

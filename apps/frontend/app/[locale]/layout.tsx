@@ -1,5 +1,5 @@
 import { cn } from '@heroui/styles';
-import { Unbounded } from 'next/font/google';
+import { Unbounded, Instrument_Sans } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale } from 'next-intl/server';
 import { PropsWithChildren } from 'react';
@@ -12,6 +12,12 @@ const unbounded = Unbounded({
   variable: '--font-unbounded'
 });
 
+const instrumentSans = Instrument_Sans({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-instrument-sans'
+});
+
 export default async function RootLayout({ children }: PropsWithChildren) {
   const locale = await getLocale();
 
@@ -22,7 +28,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
       lang={locale}
       data-theme='light'
     >
-      <body className={cn(unbounded.variable)}>
+      <body className={cn(unbounded.variable, instrumentSans.variable)}>
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>
