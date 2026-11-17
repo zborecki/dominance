@@ -1,5 +1,7 @@
 {
   "button": {
-    "search": "Search"
+    "get_started": "Get started",
+    "search": "Search",
+    "sign_in": "Sign in"
   }
 }

@@ -12,7 +12,9 @@
 
   --color-primary: var(--color-primary-500);
   --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
 
+  --color-slate-100: oklch(95.881% 0.00687 277.074);
   --color-slate-300: oklch(0.904 0.0127 271.28);
 
   --font-unbounded: var(--font-unbounded);

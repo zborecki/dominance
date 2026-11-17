@@ -1,6 +1,6 @@
-import Logo from '#/components/Logo';
 import Panel from '#/components/Panel';
-import NavigationList from '#/layouts/Header/components/NavigationList';
+import GuestActions from '#/layouts/Header/components/GuestActions';
+import Navbar from '#/layouts/Header/components/Navbar';
 
 export default function Header() {
   return (
@@ -9,26 +9,11 @@ export default function Header() {
       as='header'
       border='bottom'
       classNames={{
-        wrapper: 'flex items-center gap-10'
+        wrapper: 'flex items-center justify-between'
       }}
     >
-      <Logo />
-      <NavigationList
-        items={[
-          {
-            href: '/',
-            name: 'Home'
-          },
-          {
-            href: '/link-1',
-            name: 'Link #1'
-          },
-          {
-            href: '/link-2',
-            name: 'Link #2'
-          }
-        ]}
-      />
+      <Navbar />
+      <GuestActions />
     </Panel>
   );
 }
